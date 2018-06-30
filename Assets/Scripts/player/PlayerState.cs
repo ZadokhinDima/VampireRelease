@@ -25,7 +25,7 @@ public class PlayerState : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	protected virtual void Update () {
+	protected void UpdateBar () {
 		float ratio = (float) value / (float) maxValue;
 		valueBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
 		valueState.text = value + "/" + maxValue;
